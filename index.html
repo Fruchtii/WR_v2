@@ -6,45 +6,70 @@
     <title>Beteiligungsfinanzierung</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #f5f5f7;
         }
         .container {
-            width: 80%;
+            max-width: 1000px;
             margin: auto;
-            overflow: hidden;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px 20px;
         }
         h1, h2, h3 {
-            color: #2c3e50;
+            color: #1d1d1f;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        p, ul, ol {
+            font-size: 17px;
+            color: #1d1d1f;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
         }
         .button {
             display: inline-block;
-            background: #3498db;
+            background: #0071e3;
             color: #fff;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 22px;
             transition: background 0.3s ease;
-            margin: 10px 0;
+            margin: 10px;
+            font-size: 17px;
+            font-weight: 400;
         }
         .button:hover {
-            background: #2980b9;
+            background: #0077ed;
         }
         .hidden {
             display: none;
         }
         #quiz {
-            background: #ecf0f1;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
+            background: #fff;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .video-container {
             position: relative;
@@ -52,7 +77,9 @@
             padding-top: 30px;
             height: 0;
             overflow: hidden;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .video-container iframe {
             position: absolute;
@@ -60,15 +87,27 @@
             left: 0;
             width: 100%;
             height: 100%;
+            border-radius: 18px;
         }
         #timeline a, #glossar a {
             display: inline-block;
             margin: 5px;
-            padding: 5px 10px;
-            background: #3498db;
-            color: #fff;
+            padding: 8px 16px;
+            background: #e8e8ed;
+            color: #1d1d1f;
             text-decoration: none;
-            border-radius: 3px;
+            border-radius: 18px;
+            transition: background 0.3s ease;
+        }
+        #timeline a:hover, #glossar a:hover {
+            background: #d2d2d7;
+        }
+        section {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
     </style>
 </head>
